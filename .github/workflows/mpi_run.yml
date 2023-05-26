@@ -1,0 +1,31 @@
+name: MPI Build and Run
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install OpenMPI
+        run: sudo apt-get update && sudo apt-get install -y openmpi-bin libopenmpi-dev
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Build MPI code
+        run: |
+          mpic++ pi.cc -o pi
+
+      - name: Run MPI code
+        id: mpi-run
+        run: |
+          mpirun --oversubscribe -np 4 ./pi > output.txt
+      - name: Display output
+        run: cat output.txt

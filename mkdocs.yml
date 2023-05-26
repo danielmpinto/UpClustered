@@ -44,13 +44,23 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path: content
       check_paths: true
+  - md_in_html
 
 extra_css:
     - equipe.css
+    - stylesheet.css
     
 nav:
-    - Building a cluster:
-      - building-cluster/infrastructure/index.md      
+    - "Building a cluster":
+      - building-cluster/infrastructure/index.md
+      - "Hardware  Infrastructure":
+        - building-cluster/infrastructure/Hardware-Infrastructure/index.md
+        - building-cluster/infrastructure/Hardware-Infrastructure/BIOS.md
+      - "Physical Infrastructure": 
+        - building-cluster/infrastructure/Physical-Infrastructure/index.md
+      - "Operational System":
+        - building-cluster/infrastructure/Operational-System/index.md
+        - building-cluster/infrastructure/Operational-System/UpBoard-Setup/index.md
     - Aplications:
       - Aplications/index.md
 

@@ -1,22 +1,20 @@
-# __Hardware Infrastructure__
-
-## __Hardware used by the project__
+# Hardware used by the project
 
 The hardware used by our cluster is:
-- 24 x UpBoard
-- 24 x USB's
-- 1 Switch
-- 24 pen drives
-- Power Supply Cables
-- Adapters
-- 24 LED's
 
-## __Describing__
+- 24 x UpBoard;
+- 24 x USB's;
+- 1 Switch;
+- 24 pen drives;
+- Power Supply Cables;
+- 24 Pimoroni LED strips;
 
-The [UpBoard](https://up-board.org/up/specifications, "UpBoard Specifications") is a [Single Board Computer](https://en.wikipedia.org/wiki/Single-board_computer, "Single Board Computer Description") with a layout that looks like a RaspberryPi layout [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi, "RaspBerryPi Description"), the actual UpBoard model that we are using is from the __IntelRealSense Robotic Developmente Kit Features Atom X5 UP Board, Realsense R200 Depth Camera__.
+## Describing
+
+The [UpBoard](https://up-board.org/up/specifications, "UpBoard Specifications") is a [Single Board Computer](https://en.wikipedia.org/wiki/Single-board_computer, "Single Board Computer Description") (SBC) that shares a similar layout to the [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi, "RaspBerryPi Description"). Our chosen UpBoard model is specifically from the Intel RealSense Robotic Development Kit, which features the Atom X5 UP Board and the Realsense R200 Depth Camera. 
 
 
-### __Our UpBoard Specifications:__
+### Our UpBoard Specifications:
 - SoC – Intel Atom x5-Z8350 “Cherry Trail” quad core processor @ 1.44 GHz -(Burst frequency: 1.92 GHz) with Intel Gen8 HD graphics
 - System Memory –  4GB DDR3L-1600
 - Storage – 32 GB eMMC flash
@@ -30,16 +28,14 @@ The [UpBoard](https://up-board.org/up/specifications, "UpBoard Specifications") 
 - Power Supply – 5V/3A via 5.5/2.1mm jack
 - Dimensions – 85.60 x 56.50 mm
  
-<br>
-<div><img src="images/Intel-RealSense-Robotic-Development-Kit.webp" /></div>
-<div>Intel RealSense Robotic Development Kit Features Atom x5 UP Board, Realsense R200 Depth Camera. 2016.<a href="https://www.cnx-software.com/2016/04/14/intel-realsense-robotic-development-kit-features-atom-x5-up-board-realsense-r200-depth-camera/"> <br> cnx-software</a>.</div>
 
-<br>
-<br>
+[![Intel RealSense Robotic Development Kit](images/Intel-RealSense-Robotic-Development-Kit.webp)](https://www.cnx-software.com/2016/04/14/intel-realsense-robotic-development-kit-features-atom-x5-up-board-realsense-r200-depth-camera/)
+
+Image source: [cnx-software](https://www.cnx-software.com/2016/04/14/intel-realsense-robotic-development-kit-features-atom-x5-up-board-realsense-r200-depth-camera/) (2016)
+
 
 ## Why we chose UpBoards?
-We chose this UpBoard model thinking about reutilizing some parts from our store (UpBoards) that wasn't more being used in the instituition. Some time ago, UpBoards were used in Robotics, but went replaced by RaspBerry Pi 4.
-The chosen Upboard has a x86 architecture, which can provide many resources. The UpBoard is compatible with many softwares that requires necessary a x86 architecture.
+Our selection of the UpBoard model was based on our intention to repurpose unused UpBoards from our inventory. These boards had previously been employed in robotics but were supplanted by the Raspberry Pi 4. Our chosen UpBoard boasts an x86 architecture, offering numerous resources, and is compatible with a wide range of software that necessitates this architecture.
 
 ## Applications
 
@@ -48,5 +44,4 @@ We can use UpBoards for many different purposes, in the list below you can see t
 - Exoplanet Hunter
 - Distributed Computing (MPI)
 - Black Hole Simulator
-
 
